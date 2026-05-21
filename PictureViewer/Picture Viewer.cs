@@ -26,5 +26,10 @@ namespace PictureViewer
         {
 
         }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
