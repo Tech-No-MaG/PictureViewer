@@ -35,7 +35,8 @@ namespace PictureViewer
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-
+            // Закрыть форму
+            this.Close();
         }
 
         private void showButton_Click(object sender, EventArgs e)
