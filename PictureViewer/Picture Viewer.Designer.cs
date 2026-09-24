@@ -116,7 +116,7 @@
             this.clearButton.TabIndex = 1;
             this.clearButton.Text = "Очистить рисунок";
             this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.button2_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // backgroundButton
             // 

@@ -21,13 +21,13 @@ namespace PictureViewer
         {
 
         }
-
-        private void clearButton_Click(object sender, EventArgs e)
+        private void backgroundButton_Click(object sender, EventArgs e)
         {
-            // Очистить изображение
-            pictureBox1.Image = null;
+            // Показать диалог выбора цвета. Если пользователь нажмёт «ОК»,
+            // изменить фон PictureBox на выбранный цвет.
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+                pictureBox1.BackColor = colorDialog1.Color;
         }
-
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
@@ -46,6 +46,12 @@ namespace PictureViewer
             {
                 pictureBox1.Load(openFileDialog1.FileName);
             }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // Очистить изображение
+            pictureBox1.Image = null;
         }
     }
 }
