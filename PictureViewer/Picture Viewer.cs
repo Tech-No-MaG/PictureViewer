@@ -54,5 +54,15 @@ namespace PictureViewer
             // Очистить изображение
             pictureBox1.Image = null;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            // Если флажок установлен — растягивать изображение,
+            // иначе — отображать в обычном режиме.
+            if (checkBox1.Checked)
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            else
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+        }
     }
 }
