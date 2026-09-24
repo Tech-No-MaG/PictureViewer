@@ -22,9 +22,10 @@ namespace PictureViewer
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void clearButton_Click(object sender, EventArgs e)
         {
-
+            // Очистить изображение
+            pictureBox1.Image = null;
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
