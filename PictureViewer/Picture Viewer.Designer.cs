@@ -105,6 +105,7 @@
             this.showButton.TabIndex = 0;
             this.showButton.Text = "Показать рисунок";
             this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // clearButton
             // 
@@ -136,6 +137,7 @@
             this.closeButton.TabIndex = 3;
             this.closeButton.Text = "Закрыть";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // openFileDialog1
             // 

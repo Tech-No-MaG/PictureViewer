@@ -31,5 +31,20 @@ namespace PictureViewer
         {
 
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            // Отображается диалоговое окно «Открыть файл». 
+            // Если пользователь нажмёт «ОК», загружается выбранное изображение.
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Load(openFileDialog1.FileName);
+            }
+        }
     }
 }
