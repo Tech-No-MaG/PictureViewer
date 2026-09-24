@@ -128,6 +128,7 @@
             this.backgroundButton.TabIndex = 2;
             this.backgroundButton.Text = "Задать цвет фона";
             this.backgroundButton.UseVisualStyleBackColor = true;
+            this.backgroundButton.Click += new System.EventHandler(this.backgroundButton_Click);
             // 
             // closeButton
             // 
